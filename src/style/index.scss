@@ -1,0 +1,48 @@
+span {
+	font-size: 1	rem !important;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 1px solid green;
+.header-login-btn{
+	background-color: green;
+	border-radius: 20px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	span{
+		 padding : 20px !important;;
+		 padding-top: 20px;
+		color: white;
+		cursor:pointer;
+	}
+}
+	.header-user-img {
+		height: 100%;
+
+		img {
+			width: 45px;
+			border-radius: 100%;
+		}
+	}
+
+	.header-menu {
+		width: 33%;
+		display: flex;
+		justify-content: space-around;
+		cursor:pointer;
+	}
+}
+.bestServer{
+	background-color: darkturquoise;
+	display: flex;
+	justify-content: space-between;
+	.bestServer-contents{
+		background-color: crimson;
+		display: flex;
+		flex-direction: column;
+	}
+}
