@@ -5,12 +5,12 @@ const BestServer = () => {
 " />
         </div>
         <div className="bestServer-contents">
-            <span>فاکس اسپید بهترین</span>
-            <span>سرویس کاهش پینگ بازی</span>
-            <span>اینترنت رو بدون تحریم تجربه کنید</span>
-            <div className="bestServer-contents-btns">
-                <span>lمشاهد پلن ها</span>
-                <span>چرا فاکس اسپید؟</span>
+            <span className="xlarge bestServer-content">فاکس اسپید بهترین</span>
+            <span className="xxlarge bestServer-content">سرویس کاهش پینگ بازی</span>
+            <span className="large bestServer-content">اینترنت رو بدون تحریم تجربه کنید</span>
+            <div className="bestServer-contents-btns bestServer-content">
+                <span className="btn btn-white">چرا فاکس اسپید؟</span>
+                <span className="btn btn-orange">مشاهد پلن ها</span>
             </div>
         </div>
     </div>)

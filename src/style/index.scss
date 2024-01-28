@@ -1,5 +1,5 @@
 span {
-	font-size: 1	rem !important;
+	font-size: 1 rem !important;
 }
 
 .header {
@@ -7,19 +7,23 @@ span {
 	align-items: center;
 	justify-content: space-around;
 	border-bottom: 1px solid green;
-.header-login-btn{
-	background-color: green;
-	border-radius: 20px;
-	height: 25px;
-	display: flex;
-	align-items: center;
-	span{
-		 padding : 20px !important;;
-		 padding-top: 20px;
-		color: white;
-		cursor:pointer;
+
+	.header-login-btn {
+		background-color: green;
+		border-radius: 20px;
+		height: 25px;
+		display: flex;
+		align-items: center;
+
+		span {
+			padding: 20px !important;
+			;
+			padding-top: 20px;
+			color: white;
+			cursor: pointer;
+		}
 	}
-}
+
 	.header-user-img {
 		height: 100%;
 
@@ -33,16 +37,60 @@ span {
 		width: 33%;
 		display: flex;
 		justify-content: space-around;
-		cursor:pointer;
+		cursor: pointer;
 	}
 }
-.bestServer{
-	background-color: darkturquoise;
+
+.bestServer {
 	display: flex;
 	justify-content: space-between;
-	.bestServer-contents{
-		background-color: crimson;
+
+	.bestServer-contents {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+		padding: 10px;
+
+		.bestServer-content {
+			padding: 7px;
+		}
+
+		.xxlarge {
+			font-size: 36px;
+		}
+
+		.xlarge {
+			font-size: 33px;
+		}
+
+		.large {
+			font-size: 29px;
+		}
+
+		.bestServer-contents-btns {
+			display: flex;
+			span {
+				cursor: pointer;
+			}
+		}
 	}
+}
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 17px;
+}
+
+.btn-white {
+	color: #5A514F;
+	:hover{
+		color: #A0BF57 !important;
+	}
+}
+
+.btn-orange {
+	color: white;
+	background-color: #DF9D2A;
 }
