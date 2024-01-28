@@ -1,4 +1,12 @@
+import features from "../assets/featuresData";
+import Feature from './Feature';
 const AllFeatures=()=>{
-    return(<h1>AllFeatures</h1>)
-}
+ console.log(features);
+    return(<div>
+        {  features.map((feature , index)=>  <Feature title={feature.title} describe={feature.describe} key={index}/>)}  
+     
+
+       
+
+</div>)}
 export default AllFeatures;
