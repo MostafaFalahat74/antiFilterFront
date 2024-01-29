@@ -15,7 +15,7 @@ function App() {
       <WhyYouUseOurServices />
       <AllFeatures />
       <Plans />
-      <Servers />
+      {/* <Servers /> */}
       <Footer />
     </>
   );

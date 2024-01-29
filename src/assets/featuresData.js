@@ -43,13 +43,13 @@ const data = [
         describe: "تمامی سرویس ها به صورت نامحدود ارائه میشوند",
         icon: "IoSpeedometerOutline",
         iconColor: "red"
-    }
-    ,
+    } 
+     ,  
     {
         title: "نسخه تست رایگان",
         describe: "امکان تست 24 ساعته سرویس به صورت رایگان",
         icon: "IoSpeedometerOutline",
         iconColor: "red"
-    }
+     }
 ];
 export default data;
