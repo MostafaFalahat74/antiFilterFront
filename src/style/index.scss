@@ -1,24 +1,19 @@
-span {
-	font-size: 1 rem !important;
-}
-
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	border-bottom: 1px solid green;
+	font-size: 1.1rem !important;
 
 	.header-login-btn {
 		background-color: green;
 		border-radius: 20px;
-		height: 25px;
+		height: 30px;
 		display: flex;
 		align-items: center;
 
 		span {
-			padding: 20px !important;
-			;
-			padding-top: 20px;
+			padding: 25px 20px !important;
 			color: white;
 			cursor: pointer;
 		}
@@ -38,6 +33,10 @@ span {
 		display: flex;
 		justify-content: space-around;
 		cursor: pointer;
+
+		@media only screen and (max-width: 600px) {
+			display: none;
+		}
 	}
 }
 
@@ -46,12 +45,35 @@ span {
 	justify-content: space-between;
 	padding: 30px;
 
+	.bestServer-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width:1000px) and (min-width:800px) {
+			img {
+				width: 80%;
+			}
+		}
+
+		@media (max-width:800px) and (min-width:600px) {
+			img {
+				width: 80%;
+			}
+		}
+	}
+
 	.bestServer-contents {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: end;
-		padding: 10px;
+
+		@media (max-width:1000px) and (min-width:800px) {}
+
+		@media (max-width:800px) and (min-width:600px) {
+			width: 100%;
+		}
 
 		.bestServer-content {
 			padding: 7px;
@@ -59,14 +81,38 @@ span {
 
 		.xxlarge {
 			font-size: 36px;
+
+			@media (max-width:1000px) and (min-width:800px) {
+				font-size: 34px;
+			}
+
+			@media (max-width:800px) and (min-width:600px) {
+				font-size: 30px;
+			}
 		}
 
 		.xlarge {
 			font-size: 33px;
+
+			@media (max-width:1000px) and (min-width:800px) {
+				font-size: 30px;
+			}
+
+			@media (max-width:800px) and (min-width:600px) {
+				font-size: 26px;
+			}
 		}
 
 		.large {
 			font-size: 29px;
+
+			@media (max-width:1000px) and (min-width:800px) {
+				font-size: 27px;
+			}
+
+			@media (max-width:800px) and (min-width:600px) {
+				font-size: 23px;
+			}
 		}
 
 		.bestServer-contents-btns {
@@ -152,6 +198,12 @@ span {
 		justify-content: center;
 		flex-direction: column;
 		width: 25%;
+		@media (max-width:800px) and (min-width:600px) {
+			width: 33%;
+		}
+		@media (max-width:600px)  {
+			width: 50%;
+		}
 	}
 }
 
@@ -161,6 +213,7 @@ span {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
 	.plans-title {
 		display: flex;
 		align-items: center;
@@ -174,38 +227,46 @@ span {
 		align-items: center;
 		justify-content: center;
 		padding: 5px;
-		.plan-title{
+
+		.plan-title {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			background-color: green ;
+			background-color: green;
 			width: 100%;
-			.plan-month{
+
+			.plan-month {
 				font-size: 20px;
 			}
-			.plan-user{
+
+			.plan-user {
 				font-size: 18px;
 			}
 		}
+
 		.plan {
-			.plan-btn{
+			.plan-btn {
 				width: 100%;
 				display: flex;
 				align-items: center !important;
-				justify-content: center !important;	
+				justify-content: center !important;
 				color: white;
 				margin-bottom: 5px;
-				span{
+
+				span {
 					cursor: pointer;
 					background-color: green;
 					padding: 10px 20px;
 					border-radius: 5px;
 					display: flex;
-					align-items: center !important;;
-					justify-content: center !important;;			
+					align-items: center !important;
+					;
+					justify-content: center !important;
+					;
 				}
 			}
+
 			border: 1px solid #7DCEA0;
 			border-radius: 5px;
 			display: flex;
@@ -213,17 +274,19 @@ span {
 			align-items: end;
 			justify-content: center;
 			flex-direction: column;
-			span{
+
+			span {
 				padding: 5px;
 				font-size: 16px;
 			}
-			.plan-price{
+
+			.plan-price {
 				display: flex;
 				font-weight: bold;
 				font-size: 24px;
 				padding: 14px;
 				justify-content: center;
-				align-items: center ;
+				align-items: center;
 				width: 100%;
 			}
 
@@ -236,6 +299,14 @@ span {
 	padding: 10px 20px;
 	border-radius: 10px;
 	font-size: 17px;
+
+	@media (max-width:1000px) and (min-width:800px) {
+		padding: 18px 16px;
+	}
+
+	@media (max-width:800px) and (min-width:600px) {
+		padding: 16px 12px;
+	}
 }
 
 .btn-white {
@@ -249,4 +320,8 @@ span {
 .btn-orange {
 	color: white;
 	background-color: #DF9D2A;
+}
+
+span {
+	text-align: end;
 }
