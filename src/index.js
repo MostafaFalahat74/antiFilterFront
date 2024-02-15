@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './style/index.scss';
 import './style/resetStyle.scss';
 import App from './App';
+import './assets/i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

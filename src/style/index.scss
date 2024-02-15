@@ -185,6 +185,17 @@
 			justify-content: center;
 		}
 	}
+
+	@media (max-width:600px) {
+		.whyYouUseOurServices-content{
+			width: 100%;
+
+			span {
+				font-size: 15px;
+				padding: 5px;
+			}
+		}
+	}
 }
 
 .feature {
@@ -198,10 +209,12 @@
 		justify-content: center;
 		flex-direction: column;
 		width: 25%;
+
 		@media (max-width:800px) and (min-width:600px) {
 			width: 33%;
 		}
-		@media (max-width:600px)  {
+
+		@media (max-width:600px) {
 			width: 50%;
 		}
 	}
@@ -324,4 +337,8 @@
 
 span {
 	text-align: end;
+}
+
+body {
+	overflow-x: hidden;
 }

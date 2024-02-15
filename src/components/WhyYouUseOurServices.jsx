@@ -8,7 +8,6 @@ const WhyYouUseOurServices = () => {
             <div className="whyYouUseOurServices-contents">
                 <span className="whyYouUseOurServices-decription">فاکس اسپید یکی از قدیمی‌ترین و با سابقه‌ترین ارائه دهندگان سرویس‌های مختلف پروکسی در ایران است که توانسته به واسطه کیفیت و پشتیبانی بسیارعالی خود به شهرت بسیاری دست یابد.</span>
             </div>
-  
         </div>
     </div>)
 }

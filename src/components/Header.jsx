@@ -1,9 +1,10 @@
 import user from '../assets/images/images.png'
 
-const Header = () => {
+const Header = ({chgLanuage}) => {
     return (<div className="header">
         <div className="header-login-btn">
             <span>ورود به بخش کاربری</span>
+            <button onClick={chgLanuage}>cng</button>
         </div>
         <div className="header-menu">
             <span>فاکس اسپید</span>

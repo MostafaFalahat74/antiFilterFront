@@ -6,10 +6,15 @@ import AllFeatures from "./components/AllFeatures";
 import Plans from "./components/Plans";
 import BestServer from "./components/BestServer";
 import WhyYouUseOurServices from "./components/WhyYouUseOurServices";
+import { useTranslation } from 'react-i18next';
 function App() {
+  const { t,i18n  } = useTranslation();
+  const chgLanuage = () => {
+    i18n.changeLanguage("en")
+  }
   return (
     <>
-      <Header />
+      <Header chgLanuage={chgLanuage} />
       <BestServer />
       <Features />
       <WhyYouUseOurServices />
@@ -17,6 +22,7 @@ function App() {
       <Plans />
       {/* <Servers /> */}
       <Footer />
+      {t('hello')}
     </>
   );
 }
