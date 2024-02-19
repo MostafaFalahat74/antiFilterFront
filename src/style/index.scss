@@ -38,6 +38,14 @@
 			display: none;
 		}
 	}
+
+	select {
+		border: none;
+
+		option {
+			border: none;
+		}
+	}
 }
 
 .bestServer {
@@ -187,7 +195,7 @@
 	}
 
 	@media (max-width:600px) {
-		.whyYouUseOurServices-content{
+		.whyYouUseOurServices-content {
 			width: 100%;
 
 			span {

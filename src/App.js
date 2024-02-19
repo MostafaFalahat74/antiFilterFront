@@ -9,12 +9,12 @@ import WhyYouUseOurServices from "./components/WhyYouUseOurServices";
 import { useTranslation } from 'react-i18next';
 function App() {
   const { t,i18n  } = useTranslation();
-  const chgLanuage = () => {
+  const chgLanuageHandler = () => {
     i18n.changeLanguage("en")
   }
   return (
     <>
-      <Header chgLanuage={chgLanuage} />
+      <Header chgLanuage={chgLanuageHandler} />
       <BestServer />
       <Features />
       <WhyYouUseOurServices />
